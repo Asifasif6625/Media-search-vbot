@@ -99,8 +99,8 @@ async def start(bot, cmd):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("Search Here", switch_inline_query_current_chat=''),
-                        InlineKeyboardButton("Other Bots", url="https://t.me/subin_works/122")
+                        InlineKeyboardButton("🔍 Search Movie", switch_inline_query_current_chat=''),
+                        InlineKeyboardButton("Update Channel ⚙️", url="https://t.me/subin_works/122")
                     ],
                     [
                         InlineKeyboardButton("About", callback_data="about")
@@ -192,8 +192,8 @@ async def delete(bot, message):
 async def bot_info(bot, message):
     buttons = [
         [
-            InlineKeyboardButton('Update Channel', url='https://t.me/subin_works'),
-            InlineKeyboardButton('Source Code', url='https://github.com/subinps/Media-Search-bot')
+            InlineKeyboardButton('Update Channel', url='https://t.me/filesearch1bots'),
+            InlineKeyboardButton('Source Code', url='https://t.me/newdvdupdate')
         ]
         ]
-    await message.reply(text="Language : <code>Python3</code>\nLibrary : <a href='https://docs.pyrogram.org/'>Pyrogram asyncio</a>\nSource Code : <a href='https://github.com/subinps/Media-Search-bot'>Click here</a>\nUpdate Channel : <a href='https://t.me/subin_works'>XTZ Bots</a> </b>", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
+    await message.reply(text="<b>🔊 Language : Python3\n📚 Library : <a href='https://docs.pyrogram.org/'>Pyrogram asyncio</a>\n⚙️ Source Code : <a href='https://t.me/filesearch1bot'>Click here</a>\n🌐 Update Channel : <a href='https://t.me/filesearch1bot'>File Search Bot Updates</a> </b>", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
