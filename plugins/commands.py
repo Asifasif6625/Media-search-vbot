@@ -67,7 +67,7 @@ async def start(bot, cmd):
                 buttons = [
                     [
                         InlineKeyboardButton('🔍 Search Again', switch_inline_query_current_chat=''),
-                        InlineKeyboardButton('Update Channel ⚙️', url='https://t.me/subin_works/122')
+                        InlineKeyboardButton('Update Channel ⚙️', url='https://t.me/filesearch1bots')
                     ]
                     ]
                 await bot.send_cached_media(
@@ -100,7 +100,7 @@ async def start(bot, cmd):
                 [
                     [
                         InlineKeyboardButton("🔍 Search Movie", switch_inline_query_current_chat=''),
-                        InlineKeyboardButton("Update Channel ⚙️", url="https://t.me/subin_works/122")
+                        InlineKeyboardButton("Update Channel ⚙️", url="https://t.me/filesearch1bots")
                     ],
                     [
                         InlineKeyboardButton("🤖 About This Bot 🤖", callback_data="about")
@@ -143,10 +143,10 @@ async def channel_info(bot, message):
 @Client.on_message(filters.command('total') & filters.user(ADMINS))
 async def total(bot, message):
     """Show total files in database"""
-    msg = await message.reply("Processing...⏳", quote=True)
+    msg = await message.reply("<b>Processing...</b>⏳", quote=True)
     try:
         total = await Media.count_documents()
-        await msg.edit(f'📁 Saved files: {total}')
+        await msg.edit(f'<b>📁 Saved files: {total}</b>')
     except Exception as e:
         logger.exception('Failed to check total files')
         await msg.edit(f'Error: {e}')
@@ -185,15 +185,15 @@ async def delete(bot, message):
         'mime_type': media.mime_type
     })
     if result.deleted_count:
-        await msg.edit('File is successfully deleted from database')
+        await msg.edit('<b>File is successfully deleted from database</b>')
     else:
-        await msg.edit('File not found in database')
+        await msg.edit('<b>File not found in database</b>')
 @Client.on_message(filters.command('about'))
 async def bot_info(bot, message):
     buttons = [
         [
-            InlineKeyboardButton('Update Channel', url='https://t.me/filesearch1bots'),
-            InlineKeyboardButton('Source Code', url='https://t.me/newdvdupdate')
+            InlineKeyboardButton('🌐 Update Channel', url='https://t.me/filesearch1bots'),
+            InlineKeyboardButton('Source Code ⚙️', url='https://t.me/newdvdupdate')
         ]
         ]
     await message.reply(text="<b>🔊 Language : Python3\n📚 Library : <a href='https://docs.pyrogram.org/'>Pyrogram asyncio</a>\n⚙️ Source Code : <a href='https://t.me/filesearch1bot'>Click here</a>\n🌐 Update Channel : <a href='https://t.me/filesearch1bot'>File Search Bot Updates</a> </b>", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
