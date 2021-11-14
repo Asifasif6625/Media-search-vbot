@@ -1,7 +1,7 @@
 # Modified Version Of [Media Search bot](https://github.com/Mahesh0253/Media-Search-bot)
 
 ## Added Features
-* Imdb posters for autofilter.
+* Imdb posters for autofilter..
 * Custom captions for your files.
 * Index command to index all the files in a given channel (No USER_SESSION Required).
 * Ability to Index Public Channels without being admin.
