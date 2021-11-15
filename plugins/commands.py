@@ -66,8 +66,11 @@ async def start(bot, cmd):
                     f_caption = f"{files.file_name}"
                 buttons = [
                     [
-                        InlineKeyboardButton('🔍 Search Again', switch_inline_query_current_chat=''),
-                        InlineKeyboardButton('Update Channel ⚙️', url='https://t.me/filesearch1bots')
+                        InlineKeyboardButton('🔎 Tʀʏ Aɴᴏᴛʜᴇʀ Mᴏᴠɪᴇ 😍', switch_inline_query_current_chat=''),
+                        InlineKeyboardButton('⚙️ Bᴏᴛ Uᴘᴅᴀᴛᴇ Cʜᴀɴɴᴇʟ ⚙️', url='https://t.me/filesearch1bots')
+                    ],
+                    [
+                        InlineKeyboardButton('🖥️ Nᴇᴡ Oᴛᴛ Uᴘᴅᴀᴛᴇs 🖥️', url='https://t.me/joinchat/AAAAAE-_9UxMnUfIe4l0sQ'),
                     ]
                     ]
                 await bot.send_cached_media(
@@ -102,9 +105,9 @@ async def start(bot, cmd):
                         InlineKeyboardButton("🔍 Search Movie", switch_inline_query_current_chat=''),
                         InlineKeyboardButton("Update Channel ⚙️", url="https://t.me/filesearch1bots")
                     ],
-                    [
-                        InlineKeyboardButton("🤖 About This Bot 🤖", callback_data="about")
-                    ]
+                    #[
+                        #InlineKeyboardButton("🤖 About This Bot 🤖", callback_data="about")
+                    #]
                 ]
             )
         )
