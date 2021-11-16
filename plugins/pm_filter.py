@@ -60,15 +60,15 @@ async def filter(client, message):
                     )
         else:
             googlesearch_query = string.replace(" ", "+")
-                nores_text = "<b>Couldn't Find {} Movie ? Please Click MUST READ Button Below..!! \n\n{} മൂവി കിട്ടിയില്ല അല്ലെ ? താഴെ ഉള്ള ബട്ടനിൽ ക്ലിക്ക് ചെയി..!!</b>".format(searchstring,searchstring)
-                nores_keyboard = []
-                nores_keyboard.append([
-                    InlineKeyboardButton("📝 Mᴜꜱᴛ Rᴇᴀᴅ | Cʟɪᴄᴋ Hᴇʀᴇ 📝", callback_data="noresultpopup"+"|"+currentUserID)
-                ])
-                nores_keyboard.append([
-                    InlineKeyboardButton("🔎 Gᴏᴏɢʟᴇ Sᴇᴀʀᴄʜ 🔍", url="https://www.google.com/search?q={}".format(googlesearch_query))
-                ])
-                await query.reply(nores_text,reply_markup=InlineKeyboardMarkup(nores_keyboard),disable_web_page_preview=True) 
+            nores_text = "<b>Couldn't Find {} Movie ? Please Click MUST READ Button Below..!! \n\n{} മൂവി കിട്ടിയില്ല അല്ലെ ? താഴെ ഉള്ള ബട്ടനിൽ ക്ലിക്ക് ചെയി..!!</b>".format(searchstring,searchstring)
+            nores_keyboard = []
+            nores_keyboard.append([
+                InlineKeyboardButton("📝 Mᴜꜱᴛ Rᴇᴀᴅ | Cʟɪᴄᴋ Hᴇʀᴇ 📝", callback_data="noresultpopup"+"|"+currentUserID)
+            ])
+            nores_keyboard.append([
+                InlineKeyboardButton("🔎 Gᴏᴏɢʟᴇ Sᴇᴀʀᴄʜ 🔍", url="https://www.google.com/search?q={}".format(googlesearch_query))
+            ])
+            await query.reply(nores_text,reply_markup=InlineKeyboardMarkup(nores_keyboard),disable_web_page_preview=True) 
             return
 
         if not btn:
