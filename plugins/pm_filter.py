@@ -313,8 +313,11 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     f_caption = f"{files.file_name}"
                 buttons = [
                     [
-                        InlineKeyboardButton('More Bots', url='https://t.me/subin_works/122'),
-                        InlineKeyboardButton('Update Channel', url='https://t.me/subin_works')
+                        InlineKeyboardButton('🔎 Tʀʏ Aɴᴏᴛʜᴇʀ Mᴏᴠɪᴇ 😍', switch_inline_query_current_chat=''),
+                        InlineKeyboardButton('⚙️ Bᴏᴛ Uᴘᴅᴀᴛᴇ Cʜᴀɴɴᴇʟ ⚙️', url='https://t.me/filesearch1bots')
+                    ],
+                    [
+                        InlineKeyboardButton('🖥️ Nᴇᴡ Oᴛᴛ Uᴘᴅᴀᴛᴇs 🖥️', url='https://t.me/joinchat/AAAAAE-_9UxMnUfIe4l0sQ'),
                     ]
                     ]
                 
@@ -345,8 +348,11 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     f_caption = f"{title}"
                 buttons = [
                     [
-                        InlineKeyboardButton('More Bots', url='https://t.me/subin_works/122'),
-                        InlineKeyboardButton('Update Channel', url='https://t.me/subin_works')
+                        InlineKeyboardButton('🔎 Tʀʏ Aɴᴏᴛʜᴇʀ Mᴏᴠɪᴇ 😍', switch_inline_query_current_chat=''),
+                        InlineKeyboardButton('⚙️ Bᴏᴛ Uᴘᴅᴀᴛᴇ Cʜᴀɴɴᴇʟ ⚙️', url='https://t.me/filesearch1bots')
+                    ],
+                    [
+                        InlineKeyboardButton('🖥️ Nᴇᴡ Oᴛᴛ Uᴘᴅᴀᴛᴇs 🖥️', url='https://t.me/joinchat/AAAAAE-_9UxMnUfIe4l0sQ'),
                     ]
                     ]
                 
