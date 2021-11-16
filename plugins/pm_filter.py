@@ -313,7 +313,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     f_caption = f"{files.file_name}"
                 buttons = [
                     [
-                        InlineKeyboardButton('🔎 Tʀʏ Aɴᴏᴛʜᴇʀ Mᴏᴠɪᴇ 😍', switch_inline_query_current_chat=''),
+                        InlineKeyboardButton('🔎 Tʀʏ Aɴᴏᴛʜᴇʀ Mᴏᴠɪᴇ 😍', switch_inline_query_current_chat='')
+                    ],[
                         InlineKeyboardButton('⚙️ Bᴏᴛ Uᴘᴅᴀᴛᴇ Cʜᴀɴɴᴇʟ ⚙️', url='https://t.me/filesearch1bots')
                     ],
                     [
@@ -348,7 +349,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     f_caption = f"{title}"
                 buttons = [
                     [
-                        InlineKeyboardButton('🔎 Tʀʏ Aɴᴏᴛʜᴇʀ Mᴏᴠɪᴇ 😍', switch_inline_query_current_chat=''),
+                        InlineKeyboardButton('🔎 Tʀʏ Aɴᴏᴛʜᴇʀ Mᴏᴠɪᴇ 😍', switch_inline_query_current_chat='')
+                    ],[
                         InlineKeyboardButton('⚙️ Bᴏᴛ Uᴘᴅᴀᴛᴇ Cʜᴀɴɴᴇʟ ⚙️', url='https://t.me/filesearch1bots')
                     ],
                     [
