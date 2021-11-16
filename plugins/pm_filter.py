@@ -68,7 +68,7 @@ async def filter(client, message):
                 nores_keyboard.append([
                     InlineKeyboardButton("🔎 Gᴏᴏɢʟᴇ Sᴇᴀʀᴄʜ 🔍", url="https://www.google.com/search?q={}".format(googlesearch_query))
                 ])
-await query.reply(nores_text,reply_markup=InlineKeyboardMarkup(nores_keyboard),disable_web_page_preview=True) 
+                await query.reply(nores_text,reply_markup=InlineKeyboardMarkup(nores_keyboard),disable_web_page_preview=True) 
             return
 
         if not btn:
