@@ -89,11 +89,14 @@ async def answer(bot, query):
 
 def get_reply_markup(query):
     buttons = [
-        [
-            InlineKeyboardButton('🔍 Search Again', switch_inline_query_current_chat=query),
-            InlineKeyboardButton('Updates Channel ⚙️', url='https://t.me/filesearch1bots')
-        ]
-        ]
+                    [
+                        InlineKeyboardButton('🔎 Tʀʏ Aɴᴏᴛʜᴇʀ Mᴏᴠɪᴇ 😍', switch_inline_query_current_chat=''),
+                        InlineKeyboardButton('⚙️ Bᴏᴛ Uᴘᴅᴀᴛᴇ Cʜᴀɴɴᴇʟ ⚙️', url='https://t.me/filesearch1bots')
+                    ],
+                    [
+                        InlineKeyboardButton('🖥️ Nᴇᴡ Oᴛᴛ Uᴘᴅᴀᴛᴇs 🖥️', url='https://t.me/joinchat/AAAAAE-_9UxMnUfIe4l0sQ'),
+                    ]
+              ]
     return InlineKeyboardMarkup(buttons)
 
 
