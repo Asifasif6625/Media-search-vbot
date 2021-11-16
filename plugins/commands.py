@@ -102,13 +102,12 @@ async def start(bot, cmd):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("🔍 Search Movie", switch_inline_query_current_chat='')
-                    ],[
+                        InlineKeyboardButton("🔍 Search Movie", switch_inline_query_current_chat=''),
                         InlineKeyboardButton("Update Channel ⚙️", url="https://t.me/filesearch1bots")
                     ],
-                    #[
-                        #InlineKeyboardButton("🤖 About This Bot 🤖", callback_data="about")
-                    #]
+                    [
+                        InlineKeyboardButton("How To use Me", url="https://google.com")
+                    ]
                 ]
             )
         )
