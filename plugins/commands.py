@@ -27,11 +27,11 @@ async def start(bot, cmd):
                 ident, file_id = cmd.text.split("_-_-_-_")
                 await bot.send_message(
                     chat_id=cmd.from_user.id,
-                    text="**Please Join My Updates Channel to use this Bot..!!**\n\n**ആദ്യം ബോട്ട് അപ്ഡേറ്റ് ചാനലിൽ ജോയിൻ ചെയ്യുക..!!**",
+                    text="**Hey..Bruh🙋‍♂️..Please Join My Updates Channel to use this Bot!**\n\n**ആദ്യം ബോട്ട് അപ്ഡേറ്റ് ചാനലിൽ ജോയിൻ ചെയ്യുക!**",
                     reply_markup=InlineKeyboardMarkup(
                         [
                             [
-                                InlineKeyboardButton("🤖 Join Updates Channel", url=invite_link.invite_link)
+                                InlineKeyboardButton("🤖 Jᴏɪɴ Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ", url=invite_link.invite_link)
                             ],
                             [
                                 InlineKeyboardButton(" 🔄 Try Again", callback_data=f"checksub#{file_id}")
@@ -85,11 +85,11 @@ async def start(bot, cmd):
         invite_link = await bot.create_chat_invite_link(int(AUTH_CHANNEL))
         await bot.send_message(
             chat_id=cmd.from_user.id,
-            text="**Please Join My Updates Channel to use this Bot!**\n\n**ആദ്യം ബോട്ട് അപ്ഡേറ്റ് ചാനലിൽ ജോയിൻ ചെയ്യുക..!!**",
+            text="**Hey..Bruh🙋‍♂️..Please Join My Updates Channel to use this Bot!**\n\n**ആദ്യം ബോട്ട് അപ്ഡേറ്റ് ചാനലിൽ ജോയിൻ ചെയ്യുക!**",
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("🤖 Join Updates Channel", url=invite_link.invite_link)
+                        InlineKeyboardButton("🤖 Jᴏɪɴ Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ", url=invite_link.invite_link)
                     ]
                 ]
             )
@@ -102,11 +102,11 @@ async def start(bot, cmd):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("🔍 Search Movie", switch_inline_query_current_chat=''),
-                        InlineKeyboardButton("Update Channel ⚙️", url="https://t.me/filesearch1bots")
+                        InlineKeyboardButton("🔍 Sᴇᴀʀᴄʜ Mᴏᴠɪᴇ", switch_inline_query_current_chat=''),
+                        InlineKeyboardButton("Uᴘᴅᴀᴛᴇ Cʜᴀɴɴᴇʟ ⚙️", url="https://t.me/filesearch1bots")
                     ],
                     [
-                        InlineKeyboardButton("How To use Me", url="https://google.com")
+                        InlineKeyboardButton("? Hᴏᴡ Tᴏ Usᴇ Mᴇ ?", url="https://t.me/FileSearch1Bots/9")
                     ]
                 ]
             )
