@@ -59,7 +59,7 @@ async def filter(client, message):
                     [InlineKeyboardButton(text=f"{filename}",callback_data=f"subinps#{file_id}")]
                     )
         else:
-            nores_text = "<b>Couldn't Find  Movie ? Please Click MUST READ Button Below..!! \n\n മൂവി കിട്ടിയില്ല അല്ലെ ? താഴെ ഉള്ള ബട്ടനിൽ ക്ലിക്ക് ചെയി..!!</b>"
+            nores_text = "Couldn't Find  Movie ? Check <b>Movie Name and Year</b> In <b>#Google</b> and Try Again !\n\n മൂവി കിട്ടിയില്ല അല്ലെ ? <b>മൂവിയുടെ പേര് , മൂവി ഇറങ്ങിയ വർഷം #Google </b>  പോയി നോക്കിയിട്ട് ഒന്ന് കൂടെ ശ്രമിച്ചു നോക്ക് !"
 
             nores_keyboard = []
 
