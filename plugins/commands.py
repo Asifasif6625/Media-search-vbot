@@ -66,7 +66,8 @@ async def start(bot, cmd):
                     f_caption = f"{files.file_name}"
                 buttons = [
                     [
-                        InlineKeyboardButton('🔎 Tʀʏ Aɴᴏᴛʜᴇʀ Mᴏᴠɪᴇ 😍', switch_inline_query_current_chat=''),
+                        InlineKeyboardButton('🔎 Tʀʏ Aɴᴏᴛʜᴇʀ Mᴏᴠɪᴇ 😍', switch_inline_query_current_chat='')
+                    ],[
                         InlineKeyboardButton('⚙️ Bᴏᴛ Uᴘᴅᴀᴛᴇ Cʜᴀɴɴᴇʟ ⚙️', url='https://t.me/filesearch1bots')
                     ],
                     [
