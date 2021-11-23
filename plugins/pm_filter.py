@@ -156,7 +156,9 @@ async def group(client, message):
                 buttons.append([InlineKeyboardButton(text="Close ❌",callback_data="close")])
             poster=None
             if API_KEY:
-                poster=await get_poster(search)
+                #poster=await get_poster(search)
+                poster="/app/mm.jpg"
+            poster="/app/mm.jpg"
             if poster:
                 await message.reply_photo(photo=poster, caption=f"<b>📁 Here is What I Found In My Database For Your Query : {search} ‌‌‌‌‎👇 ­  ­  ­  ­  ­  </b>", reply_markup=InlineKeyboardMarkup(buttons))
             else:
@@ -176,7 +178,9 @@ async def group(client, message):
             buttons.append([InlineKeyboardButton(text="Close ❌",callback_data="close")])
         poster=None
         if API_KEY:
-            poster=await get_poster(search)
+            #poster=await get_poster(search)
+            poster="/app/mm.jpg"
+        poster="/app/mm.jpg"
         if poster:
             await message.reply_photo(photo=poster, caption=f"<b>📁 Here is What I Found In My Database For Your Query : {search} ‌‌‌‌👇‎ ­  ­  ­  ­  ­  </b>", reply_markup=InlineKeyboardMarkup(buttons))
         else:
