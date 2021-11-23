@@ -97,11 +97,12 @@
             "url": "heroku/python"
         }
     ],
+    "stack": "container"
     "formation": {
         "worker": {
             "quantity": 1,
             "size": "free"
         }
     }
-    "stack": "container"
+    
 }
