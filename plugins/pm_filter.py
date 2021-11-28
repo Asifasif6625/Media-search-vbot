@@ -72,8 +72,8 @@ async def filter(client, message):
         if not btn:
             return
 
-        if len(btn) > 10: 
-            btns = list(split_list(btn, 10)) 
+        if len(btn) > 8: 
+            btns = list(split_list(btn, 8)) 
             keyword = f"{message.chat.id}-{message.message_id}"
             BUTTONS[keyword] = {
                 "total" : len(btns),
@@ -111,7 +111,9 @@ async def filter(client, message):
             buttons.append([InlineKeyboardButton(text="Close ❌",callback_data="close")])
         poster=None
         if API_KEY:
-            poster=await get_poster(search)
+            #poster=await get_poster(search)
+            poster = "https://te.legra.ph/file/2e0c1ac6f402404e2211d.jpg"
+        poster = "https://te.legra.ph/file/2e0c1ac6f402404e2211d.jpg"
         if poster:
             await message.reply_photo(photo=poster, caption=f"<b>📁 Here is What I Found In My Database For Your Query : {search} ‌‌‌‌‎👇 ­  ­  ­  ­  ­  </b>", reply_markup=InlineKeyboardMarkup(buttons))
         else:
