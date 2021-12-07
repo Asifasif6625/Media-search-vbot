@@ -4,12 +4,13 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, InlineQue
 
 from utils import get_search_results, is_subscribed, get_size
 from info import CACHE_TIME, AUTH_USERS, AUTH_CHANNEL, CUSTOM_FILE_CAPTION
+from info import BANNED_USERS
 
 logger = logging.getLogger(__name__)
 cache_time = 0 if AUTH_USERS or AUTH_CHANNEL else CACHE_TIME
 
 
-@Client.on_inline_query(filters.user(AUTH_USERS) if AUTH_USERS else None)
+@Client.on_inline_query(filters.user(AUTH_USERS) & ~filters.user(BANNED_USERS) if AUTH_USERS else None)
 async def answer(bot, query):
     """Show search results for given inline query"""
 
