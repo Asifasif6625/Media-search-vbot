@@ -92,7 +92,7 @@ def get_reply_markup(query):
                     [
                         InlineKeyboardButton('🔎 Tʀʏ Aɴᴏᴛʜᴇʀ Mᴏᴠɪᴇ 😍', switch_inline_query_current_chat=query)
                     ],[
-                        InlineKeyboardButton('⚙️ Bᴏᴛ Uᴘᴅᴀᴛᴇ Cʜᴀɴɴᴇʟ ⚙️', url='https://t.me/filesearch1bots')
+                        InlineKeyboardButton('⚙️ Bᴏᴛ Uᴘᴅᴀᴛᴇ Cʜᴀɴɴᴇʟ ⚙️', url='https://t.me/+xIomuW_e10s4OWQ0')
                     ],
                     [
                         InlineKeyboardButton('🖥️ Nᴇᴡ Oᴛᴛ Uᴘᴅᴀᴛᴇs 🖥️', url='https://t.me/joinchat/AAAAAE-_9UxMnUfIe4l0sQ'),
