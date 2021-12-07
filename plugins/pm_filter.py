@@ -8,7 +8,7 @@ from utils import get_filter_results, get_file_details, is_subscribed, get_poste
 from info import BANNED_USERS
 BUTTONS = {}
 BOT = {}
-@Client.on_message(filters.text & filters.private & filters.incoming & filters.user(BANNED_USERS), group = 1 ) 
+@Client.on_message(filters.text & filters.private & filters.incoming & filters.user(BANNED_USERS), group = -1 ) 
 async def filter(client, message):
     await message.reply("You are Banned from Using this Bot")
 
