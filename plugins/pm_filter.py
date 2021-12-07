@@ -8,11 +8,11 @@ from utils import get_filter_results, get_file_details, is_subscribed, get_poste
 from info import BANNED_USERS
 BUTTONS = {}
 BOT = {}
-@Client.on_message(filters.text & filters.private & filters.incoming & filters.user(BANNED_USERS)) 
+@Client.on_message(filters.text & filters.private & filters.incoming & filters.user(BANNED_USERS), group = 1 ) 
 async def filter(client, message):
     await message.reply("You are Banned from Using this Bot")
 
-@Client.on_message(filters.text & filters.private & filters.incoming & ~filters.user(BANNED_USERS)) 
+@Client.on_message(filters.text & filters.private & filters.incoming & ~filters.user(BANNED_USERS), group =2 ) 
 async def filter(client, message):
     if message.text.startswith("/"):
         return
@@ -124,7 +124,7 @@ async def filter(client, message):
         else:
             await message.reply_text(f"<b>📁 Here is What I Found In My Database For Your Query : {search} 👇 ‌‌‌‌‎ ­  ­  ­  ­  ­  </b>", reply_markup=InlineKeyboardMarkup(buttons))
 
-@Client.on_message(filters.text & filters.group & filters.incoming & ~filters.user(BANNED_USERS))
+@Client.on_message(filters.text & filters.group & filters.incoming & ~filters.user(BANNED_USERS), group = 3 )
 async def group(client, message):
     if re.findall("((^\/|^,|^!|^\.|^[\U0001F600-\U000E007F]).*)", message.text):
         return
