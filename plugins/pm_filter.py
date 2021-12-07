@@ -10,6 +10,7 @@ BUTTONS = {}
 BOT = {}
 @Client.on_message(filters.text & filters.private & filters.incoming & filters.user(BANNED_USERS), group = -1 ) 
 async def filter(client, message):
+    print("hi")
     await message.reply("You are Banned from Using this Bot")
 
 @Client.on_message(filters.text & filters.private & filters.incoming & ~filters.user(BANNED_USERS), group =2 ) 
