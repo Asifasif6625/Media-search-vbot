@@ -68,7 +68,7 @@ async def start(bot, cmd):
                     [
                         InlineKeyboardButton('🔎 Tʀʏ Aɴᴏᴛʜᴇʀ Mᴏᴠɪᴇ 😍', switch_inline_query_current_chat='')
                     ],[
-                        InlineKeyboardButton('⚙️ Bᴏᴛ Uᴘᴅᴀᴛᴇ Cʜᴀɴɴᴇʟ ⚙️', url='https://t.me/filesearch1bots')
+                        InlineKeyboardButton('⚙️ Bᴏᴛ Uᴘᴅᴀᴛᴇ Cʜᴀɴɴᴇʟ ⚙️', url='https://t.me/+xIomuW_e10s4OWQ0')
                     ],
                     [
                         InlineKeyboardButton('🖥️ Nᴇᴡ Oᴛᴛ Uᴘᴅᴀᴛᴇs 🖥️', url='https://t.me/joinchat/AAAAAE-_9UxMnUfIe4l0sQ'),
@@ -103,7 +103,7 @@ async def start(bot, cmd):
                 [
                     [
                         InlineKeyboardButton("🔍 Sᴇᴀʀᴄʜ Mᴏᴠɪᴇ", switch_inline_query_current_chat=''),
-                        InlineKeyboardButton("Uᴘᴅᴀᴛᴇ Cʜᴀɴɴᴇʟ ⚙️", url="https://t.me/filesearch1bots")
+                        InlineKeyboardButton("Uᴘᴅᴀᴛᴇ Cʜᴀɴɴᴇʟ ⚙️", url="https://t.me/+xIomuW_e10s4OWQ0")
                     ],
                     [
                         InlineKeyboardButton("? Hᴏᴡ Tᴏ Usᴇ Mᴇ ?", url="https://t.me/FileSearch1Bots/9")
