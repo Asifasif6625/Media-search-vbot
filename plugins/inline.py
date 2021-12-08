@@ -106,6 +106,6 @@ def get_reply_markup(query):
 async def answer_inline_bnd_users(client, query):
     return await query.answer(results=[],
         cache_time=0,
-        switch_pm_text='🤖 Join First My Bot Update Channel 🤙',
+        switch_pm_text='You are Banned from this Bot ❌❌',
         switch_pm_parameter="banned")
 
