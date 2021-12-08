@@ -102,5 +102,10 @@ def get_reply_markup(query):
     return InlineKeyboardMarkup(buttons)
 
 
-
+@Client.on_inline_query(filters.user(BANNED_USERS))
+async def answer_inline_bnd_users(client, query):
+    return await query.answer(results=[],
+        cache_time=0,
+        switch_pm_text='🤖 Join First My Bot Update Channel 🤙',
+        switch_pm_parameter="banned")
 
