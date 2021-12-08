@@ -125,6 +125,10 @@ async def filter(client, message):
         else:
             await message.reply_text(f"<b>📁 Here is What I Found In My Database For Your Query : {search} 👇 ‌‌‌‌‎ ­  ­  ­  ­  ­  </b>", reply_markup=InlineKeyboardMarkup(buttons))
 
+@Client.on_message(filters.text & filters.private & filters.incoming & filters.user(BANNED_USERS), group =2 ) 
+async def filter_bnd_users(client, message):
+    await message.reply('<i>You are banned from using this Bot..</i>')
+
 @Client.on_message(filters.text & filters.group & filters.incoming & ~filters.user(BANNED_USERS), group = 3 )
 async def group(client, message):
     if re.findall("((^\/|^,|^!|^\.|^[\U0001F600-\U000E007F]).*)", message.text):
